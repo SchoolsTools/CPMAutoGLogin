@@ -1,0 +1,14 @@
+{
+  "name": "CPMAutoGLogin",
+  "description": "No more clicking a button when you need to sign into Google on CPM - this extension does it for you!",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "short_name":"CpmAGL",
+  "content_scripts": [
+    {
+      "matches": ["https://sso.cpm.org/?redirect_uri=*"],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
